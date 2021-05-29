@@ -1,14 +1,11 @@
 import React,{useState} from 'react';
 import { MDBCol,MDBBtn, MDBContainer, MDBRow, MDBFooter,MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
-    const Footer = () => {
-        const [display,setDisplay] = useState(false)
-        const Display =()=>{
-        setDisplay(!display)
-    }
+    const Footer = ({fullDynamic,compactDynamic,Display,enableDisplay}) => {
+
     return (
         <div className="footer">
              <MDBFooter className="font-small footer-container  pt-2 mt-4">
-             <MDBContainer className={display ? "text-center text-md-left show  " : "display"}>
+             <MDBContainer className={enableDisplay ? "text-center text-md-left show  " : "display"}>
              <MDBRow className="footer-buttons">
           <MDBCol  sm="4"  md="3" lg="3" xl="2">
           <MDBDropdown>
@@ -16,8 +13,8 @@ import { MDBCol,MDBBtn, MDBContainer, MDBRow, MDBFooter,MDBDropdown, MDBDropdown
           Dynamic
         </MDBDropdownToggle>
         <MDBDropdownMenu color="ins" basic>
-        <MDBDropdownItem>Full View</MDBDropdownItem>
-          <MDBDropdownItem>Compact View</MDBDropdownItem>
+        <MDBDropdownItem onClick={fullDynamic}>Full View</MDBDropdownItem>
+          <MDBDropdownItem onClick={compactDynamic}>Compact View</MDBDropdownItem>
         </MDBDropdownMenu>
       </MDBDropdown>
           </MDBCol>
@@ -46,7 +43,7 @@ import { MDBCol,MDBBtn, MDBContainer, MDBRow, MDBFooter,MDBDropdown, MDBDropdown
           <MDBBtn color="mdb-color">My Table</MDBBtn>
           </MDBCol>
           <MDBCol  sm="4" md="3" lg="3" xl="2">
-          <MDBBtn onClick={()=>Display()} color="mdb-color">My Library</MDBBtn>
+          <MDBBtn onClick={Display} color="mdb-color">My Library</MDBBtn>
 
           </MDBCol>
           <MDBCol  sm="4" md="3" lg="3" xl="2">

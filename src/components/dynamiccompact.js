@@ -1031,11 +1031,12 @@ const headerNumbers = [
     <div className="dynamic-tables">
 
 
-      {/* -------------- FULL TABLE DYNAMIC ---------------- */}
 
-      <div id="datatable-fixed" data-mdb-max-height="460" data-mdb-fixed-header="true" className="datatable">
+      {/* -------------- COMPACT TABLE DYNAMIC ---------- */}
+
+      <div id="datatable-fixed" data-mdb-max-height="460" data-mdb-fixed-header="true" className="datatable table-2">
         <div className="datatable-inner table-responsive ps ps--active-y ps--active-x" style={{ overflow: "auto", position: "relative", maxHeight: "460px" }}>
-          <table className="table datatable-table">
+          <table className="table datatable-table ">
 
             <thead className="datatable-header">
 
@@ -1043,7 +1044,7 @@ const headerNumbers = [
                 {headerNumbers.map((v, i) => {
                   return (
 
-                    <th style={{ cursor: "pointer", top: "-1px" }} scope="col" className="fixed-cell" key={i}>{v}</th>
+                    <th style={{ cursor: "pointer", top: "-1px", }} scope="col" className="fixed-cell " key={i}>{v}</th>
                   )
                 })}
               </tr>
@@ -1061,13 +1062,14 @@ const headerNumbers = [
                   )
                 })}
               </tr>
-            </thead><tbody className="datatable-body">
+            </thead>
+            <tbody className="datatable-body">
               <tr scope="row" data-mdb-index="0">
                 <td style={{ left: "-1px" }} className="fixed-cell " data-mdb-field="name" false="">1st</td>
                 {protien1R1.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1079,10 +1081,9 @@ const headerNumbers = [
               <tr scope="row" data-mdb-index="0">
                 <td style={{ left: "-1px" }} className="fixed-cell" data-mdb-field="name" false="">2nd</td>
                 {protien1R2.map((v, i) => {
-
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1096,7 +1097,7 @@ const headerNumbers = [
                 {protien1R3.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1110,7 +1111,7 @@ const headerNumbers = [
                 {protien1R4.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1124,7 +1125,7 @@ const headerNumbers = [
                 {protien1R1.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1138,7 +1139,7 @@ const headerNumbers = [
                 {protien1R2.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td style={{ width: "100px" }} className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1152,7 +1153,7 @@ const headerNumbers = [
                 {protien1R3.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1166,7 +1167,7 @@ const headerNumbers = [
                 {protien1R4.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1180,7 +1181,7 @@ const headerNumbers = [
                 {protien1R1.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td style={{ width: "100px" }} className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1194,7 +1195,7 @@ const headerNumbers = [
                 {protien1R2.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1204,11 +1205,11 @@ const headerNumbers = [
                 })}
               </tr>
               <tr scope="row" data-mdb-index="0">
-                <td style={{ left: "-1px" }} className="fixed-cell" data-mdb-field="name"  false="">11th</td>
+                <td style={{ left: "-1px" }} className="fixed-cell" data-mdb-field="name" false="">11th</td>
                 {protien1R3.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td style={{ width: "100px" }} className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1222,7 +1223,7 @@ const headerNumbers = [
                 {protien1R4.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td style={{ width: "100px" }} className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1236,7 +1237,7 @@ const headerNumbers = [
                 {protien1R1.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td style={{ width: "100px" }} className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1250,7 +1251,7 @@ const headerNumbers = [
                 {protien1R2.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td style={{ width: "100px" }} className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1264,7 +1265,7 @@ const headerNumbers = [
                 {protien1R3.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1278,7 +1279,7 @@ const headerNumbers = [
                 {protien1R4.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1287,12 +1288,13 @@ const headerNumbers = [
                   )
                 })}
               </tr>
+
               <tr scope="row" data-mdb-index="0">
                 <td style={{ left: "-1px" }} className="fixed-cell" data-mdb-field="name" false="">17th</td>
-                {protien1R1.map((v, i) => {
+                {protien1R4.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1301,12 +1303,13 @@ const headerNumbers = [
                   )
                 })}
               </tr>
+
               <tr scope="row" data-mdb-index="0">
                 <td style={{ left: "-1px" }} className="fixed-cell" data-mdb-field="name" false="">18th</td>
-                {protien1R2.map((v, i) => {
+                {protien1R4.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1315,12 +1318,13 @@ const headerNumbers = [
                   )
                 })}
               </tr>
+
               <tr scope="row" data-mdb-index="0">
                 <td style={{ left: "-1px" }} className="fixed-cell" data-mdb-field="name" false="">19th</td>
-                {protien1R3.map((v, i) => {
+                {protien1R4.map((v, i) => {
                   return (
 
-                    <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px" }} className="protien-table" data-mdb-field="position" false="" key={i}>
+                    <td className="protien-table-2" data-mdb-field="position" false="" key={i}>
                       {v.name}
                       <span className="header-title">
                         {v.title}
@@ -1329,6 +1333,7 @@ const headerNumbers = [
                   )
                 })}
               </tr>
+
 
             </tbody>
           </table>
@@ -1340,9 +1345,6 @@ const headerNumbers = [
 
 
       </div>
-
-
-
 
 
 
