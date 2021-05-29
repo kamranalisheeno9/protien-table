@@ -1,3 +1,5 @@
+
+
 .logo-img{
     width: 180px;
 }
@@ -54,39 +56,63 @@
     position: relative;
     top: 0px;
     transition: 0.25s all linear;
-    z-index: 9999;
+    z-index: 9999 !important;
 }
-.dynamic-full{
-    width: 70% ;
-    transform: translate(0,20%);
-    margin: 0 auto !important;
+.datatable{
+    width: 80% !important;
+    margin: 3% auto;
+}
+.table{
+    margin-bottom: 0;
     background-color: white;
-    z-index: -1;
-}
-.table-rank{
-    position: fixed !important;
-    background-color: red;
-    padding: 20px;
-    top: 200;
-    left: 0;
-    width: 70px;
-}
-.number-row{
-    background-color: rgb(0, 255, 213) !important;
-}
-.number-row thead tr th:first-child{
-    padding: 20px 40px;
 
 }
-.number-row thead tr th{
-    padding: 20px 85px;
+.datatable-inner{
+    border-radius: 5px ;
+
 }
 tr th:first-child{
-    width: 80px !important;
+
+    width: 100px !important;
+    background-color: rgb(122, 122, 122);
+    left:0px;
 }
 tr th{
     width: 195px !important;
+
 }
+.datatable thead .fixed-cell {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: rgb(122, 122, 122);
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+table,th,td,thead tr,thead th{
+    border: 2px solid rgb(104, 104, 104) !important;
+}
+.datatable tbody .fixed-cell {
+    position: sticky;
+    z-index: 1;
+    font-weight: 500;
+    color: white !important;
+    background-color: rgb(122, 122, 122);
+}
+.header-title{
+    float: right;
+}
+.table{
+    margin-bottom: 0px !important;
+}
+.protien-table{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
 
 @media screen and (max-width:576px) {
     .footer-buttons button{
