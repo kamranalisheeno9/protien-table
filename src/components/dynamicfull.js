@@ -1047,7 +1047,7 @@ return(
                 </tr>
             </thead><tbody className="datatable-body">
               <tr scope="row" data-mdb-index="0">
-                <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px", left: "-1px" }} className="fixed-cell" data-mdb-field="name" false="">1st</td>
+                <td style={{ minWidth: "199px", maxWidth: "200px", width: "200px", left: "-1px" }} className="fixed-cell " data-mdb-field="name" false="">1st</td>
                 {protien1R1.map((v,i)=>{
                   return(
 

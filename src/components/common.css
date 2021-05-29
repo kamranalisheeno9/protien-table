@@ -1,4 +1,16 @@
-
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
 
 .logo-img{
     width: 180px;
@@ -71,15 +83,15 @@
     border-radius: 5px ;
 
 }
-tr th:first-child{
 
-    width: 100px !important;
-    background-color: rgb(122, 122, 122);
-    left:0px;
-}
-tr th{
+.table tr th{
     width: 195px !important;
 
+}
+tr th:first-child{
+
+    background-color: rgb(122, 122, 122);
+    left:-1px;
 }
 .datatable thead .fixed-cell {
     position: sticky;
@@ -110,7 +122,6 @@ table,th,td,thead tr,thead th{
     font-size: 16px;
     font-weight: 500;
 }
-
 
 
 
