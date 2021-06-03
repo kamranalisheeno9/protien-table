@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { MDBCol,MDBBtn, MDBContainer, MDBRow, MDBFooter,MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem } from "mdbreact";
-    const Footer = ({fullDynamic,compactDynamic,Display,enableDisplay}) => {
+    const Footer = ({fullDynamic,compactDynamic,Display,enableDisplay,fullUniversal,compactUniversal,}) => {
 
     return (
         <div className="footer">
@@ -28,8 +28,8 @@ import { MDBCol,MDBBtn, MDBContainer, MDBRow, MDBFooter,MDBDropdown, MDBDropdown
           Universal
         </MDBDropdownToggle>
         <MDBDropdownMenu color="ins" basic>
-        <MDBDropdownItem>Full View</MDBDropdownItem>
-          <MDBDropdownItem>Compact View</MDBDropdownItem>
+        <MDBDropdownItem onClick={fullUniversal}>Full View</MDBDropdownItem>
+          <MDBDropdownItem onClick={compactUniversal}>Compact View</MDBDropdownItem>
         </MDBDropdownMenu>
       </MDBDropdown>
             

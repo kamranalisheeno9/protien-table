@@ -70,14 +70,10 @@
     margin-bottom: 15px;
 }
 .display{
-    position: absolute;
-    top: 25px;
-    z-index: -1;
-
+display: none;
 }
 .show{
-    position: relative;
-    top: 0px;
+   display: block;
     transition: 0.25s all linear;
     z-index: 9999 !important;
 }
@@ -87,9 +83,10 @@
 
 
 .datatable{
-    width: 71% !important;
-    margin: 3% auto;
-    max-width:1080px ;
+    width: 71% ;
+    margin:10px auto;
+    margin-top: 0px;
+    max-width:1280px ;
 }
 .table{
     margin-bottom: 0 !important;
@@ -116,8 +113,12 @@
 
 }
 
+.dynamic-tables {
+    padding-bottom: 2% !important;
+}
+
 table,th,td,thead tr,thead th{
-    border: 2px solid rgb(104, 104, 104) !important;
+    border: 2px solid rgb(136, 136, 136) !important;
 }
 .datatable tbody .fixed-cell {
     position: sticky;
@@ -131,10 +132,9 @@ table,th,td,thead tr,thead th{
 }
 
 .protien-table{
-    width: 495px !important;
-    min-width: 495px !important;
-    max-width: 495px !important;
-
+    width: 195px !important;
+    min-width: 195px !important;
+    max-width: 195px !important;
     font-size: 16px;
     font-weight: 500;
 }
@@ -142,28 +142,129 @@ table,th,td,thead tr,thead th{
     padding-bottom: 5%;
 
 }
-
-/* ------Compact Table -------- */
-
-.table-2{
-    margin-bottom: 0px !important;
-    width: 70% !important;
-    max-width:1070px ;
-
+.column-name{
+    text-align: center !important;
 }
+/* ------Compact Table -------- */
 
 .table-2 .table{
     margin-bottom: 0px !important;
 }
 .protien-table-2 {
-    width: 245px !important;
-    min-width: 245px !important;
-    max-width: 245px !important;
     font-weight: 600;
 
 }
 
-@media screen and (max-width:576px) {
+
+/* Button Functionalities */
+.text-container{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.text-container h6{
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+.pagination{
+    justify-content: center;
+    color: white !important;
+    text-align: center;
+    padding-right: 35px;
+
+}
+
+.pagination ul{
+    display: flex;
+    flex-direction: row;
+
+}
+.pagination ul li{
+    background-color: rgb(255, 255, 255) !important;
+    list-style: none;
+    letter-spacing: 30px;
+    color: black;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+    font-weight: 700;
+    transition: 0.25s all linear;
+}
+
+.pagination ul li:hover{
+    background-color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255);
+}
+
+    .pagination button {
+        padding: 8px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin-top: 0 !important;
+    }
+.pagination input{
+    width: 100% !important;
+    padding: 10px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    border-radius: 10px;
+    border: none !important;
+}
+
+.view-btn{
+    text-align: center !important;
+    margin-bottom: 10px !important;
+}
+.view-btn button{
+    font-weight: 800 !important;
+
+}
+
+@media screen and (max-width:1200px) {
+    .protien-table{
+        width: 165px !important;
+        min-width: 165px !important;
+        max-width: 165px !important;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .datatable{
+        width: 80% !important ;
+        max-width:1280px ;
+    }
+
+}    
+@media screen and (max-width:992px) {
+    .protien-table{
+        width: 148px !important;
+        min-width: 148px !important;
+        max-width: 148px !important;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .datatable{
+        width: 90% !important ;
+        max-width:1280px ;
+    }
+    table,th,td,thead tr,thead th{
+        font-size: 12px !important;
+    
+    }
+    .datatable tbody .fixed-cell {
+        font-size: 12px !important;
+    
+    }
+
+}    
+@media screen and (max-width:768px) {
+    .datatable{
+    width: 90% !important;
+    }
+} 
+    @media screen and (max-width:576px) {
     .footer-buttons button{
         width: 80%;
         margin-bottom: 10px;
@@ -172,6 +273,12 @@ table,th,td,thead tr,thead th{
     .dropdown-menu{
         width: 80%;
         
+    }
+    .pagination ul li {
+        padding: 8px !important;
+        padding-left: 20px !important;
+        padding-right: 0px !important;
+        margin-top: 0 !important;
     }
     
 }

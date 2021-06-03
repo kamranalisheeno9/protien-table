@@ -4,9 +4,10 @@
   
 }
 .footer{
-   position: sticky;
-   bottom: 0;
-}
+   position: sticky !important;
+   top: 100vh !important;
+
+  }
 .dynamic-hide{
   display: none;
 }
@@ -18,4 +19,25 @@
 }
 .compact-table{
   display: block;
+}
+.universal-dynamic-hide{
+  display: none;
+}
+.universal-dynamic{
+  display: block;
+}
+.universal-compact-hide{
+  display: none;
+}
+.universal-compact{
+  display: block;
+}
+.footer-toggle{
+  font-size: 30px;
+  color: white;
+  background-color: red;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 100%;
+  margin: 5px !important;
 }
