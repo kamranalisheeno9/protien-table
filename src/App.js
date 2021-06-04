@@ -6,13 +6,18 @@ import DynamicFullTable from './components/dynamicfull.js';
 import CompactFullTable from './components/dynamiccompact.js';
 import UniversalFull from './components/universalfull';
 import UniversalCompact from './components/universalcompact';
-
+import { BsList } from "react-icons/bs";
 
 function App() {
 
   const [display, setDisplay] = useState(false)
   const Display = () => {
     setDisplay(!display)
+  }
+  const [displayFooter, setDisplayFooter] = useState(false)
+  const FooterDisplay = () => {
+    setDisplayFooter(!displayFooter)
+    console.log(displayFooter)
   }
 
 
@@ -22,7 +27,7 @@ function App() {
     setcompactDynamic(false)
     setcompactUniversal(false)
     setfullUniversal(false)
-
+    setDisplayFooter(false)
     setDisplay(false)
   }
   const [compactDynamic, setcompactDynamic] = useState(false)
@@ -32,6 +37,7 @@ function App() {
     setfullDynamic(false)
     setcompactUniversal(false)
     setfullUniversal(false)
+    setDisplayFooter(false)
 
     setDisplay(false)
 
@@ -45,6 +51,8 @@ function App() {
     setfullDynamic(false)
     setcompactDynamic(false)
     setDisplay(false)
+    setDisplayFooter(false)
+
   }
   const [compactUniversal, setcompactUniversal] = useState(false)
 
@@ -54,6 +62,7 @@ function App() {
     setfullDynamic(false)
     setcompactDynamic(false)
     setDisplay(false)
+    setDisplayFooter(false)
 
   }
 
@@ -75,8 +84,14 @@ function App() {
       <div className={compactUniversal ? "universal-compact" : "universal-compact-hide"}>
         <UniversalCompact fullUniversal={() => FullUniversal()} />
       </div>
-      
-      <Footer  Display={() => Display()} enableDisplay={display} fullDynamic={() => FullDynamic()} compactDynamic={() => CompactDynamic()} fullUniversal={() => FullUniversal()} compactUniversal={() => CompactUniversal()} className="footer" />
+
+      <div className={displayFooter ? "footer" : "footer-hide"}>
+
+        <Footer Display={() => Display()} enableDisplay={display} fullDynamic={() => FullDynamic()} compactDynamic={() => CompactDynamic()} fullUniversal={() => FullUniversal()} compactUniversal={() => CompactUniversal()} />
+      </div>
+      <h1 className="footer-toggle">
+        <BsList onClick={() => FooterDisplay()} />
+      </h1>
     </div>
 
   );

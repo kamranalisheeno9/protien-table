@@ -1,43 +1,71 @@
-.App{
+.App {
   background-color: #4B5563;
   min-height: 100vh;
-  
 }
-.footer{
-   position: sticky !important;
-   top: 100vh !important;
 
-  }
-.dynamic-hide{
+.footer {
+  position: sticky !important;
+  top: 100vh !important;
+  z-index: 30;
+}
+
+.dynamic-hide {
   display: none;
 }
-.dynamic-table{
+
+.dynamic-table {
   display: block;
 }
-.compact-hide{
+
+.compact-hide {
   display: none;
 }
-.compact-table{
+
+.compact-table {
   display: block;
 }
-.universal-dynamic-hide{
+
+.universal-dynamic-hide {
   display: none;
 }
-.universal-dynamic{
+
+.universal-dynamic {
   display: block;
 }
-.universal-compact-hide{
+
+.universal-compact-hide {
   display: none;
 }
-.universal-compact{
+
+.universal-compact {
   display: block;
 }
-.footer-toggle{
-  font-size: 30px;
+
+.footer-toggle {
+  font-size: 25px;
   color: white;
-  background-color: red;
+  background-color: rgb(0, 0, 0);
   width: fit-content;
-  padding: 5px;
-  border-radius: 100%;
+  padding: 2px;
+  border-radius: 5px;
   margin: 5px !important;
+  margin-bottom: 0px !important;
+  position: sticky;
+  top: 95vh;
+  z-index: 20;
+  display: none;
+}
+
+.footer-hide {
+  position: sticky !important;
+  top: 100vh !important;
+}
+
+@media screen and (max-width:576px) {
+  .footer-hide {
+    display: none;
+  }
+  .footer-toggle {
+    display: block;
+  }
 }
