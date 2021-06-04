@@ -16491,7 +16491,7 @@ const DynamicCompact = ({ fullDynamic }) => {
   return (
     <Container fluid>
       <div className="text-container" >
-        <h6 >Full View</h6>
+        <h6 >Compact View</h6>
         <h6>Dynamic Table of Organism {organismNumber}</h6>
         <h6 >Protien {protienNumber}</h6>
 

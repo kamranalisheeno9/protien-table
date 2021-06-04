@@ -2554,7 +2554,7 @@ const UniversalCompact = ({ fullUniversal }) => {
   return (
     <Container fluid>
       <div className="text-container" >
-        <h6 >Full View</h6>
+        <h6 >Compact View</h6>
         <h6>Universal Tables of Organism {organismNumber}</h6>
 
       </div>
